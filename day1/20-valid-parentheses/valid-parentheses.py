@@ -4,8 +4,8 @@ class Solution:
         map = {')' : '(', ']' : '[', '}': '{'}
         brackets = ['(', '[', '{']
 
-        if len(s)%2!=0:
-            return False
+        # if len(s)%2!=0:
+        #     return False
 
         for c in s:
             if c in brackets:
@@ -19,6 +19,22 @@ class Solution:
                     return False
         
         return len(stack) == 0
+
+
+        ## More optimized
+
+        # stack = list()
+        # for b in s:
+        #   if b == "(":
+        #     stack.append(")")
+        #   elif b == "{":
+        #     stack.append("}")
+        #   elif b == "[":
+        #     stack.append("]")
+        #   elif len(stack) == 0 or b != stack.pop():
+        #     return False
+        # return len(stack) == 0
+
 
 
 
