@@ -9,6 +9,7 @@ class Solution(object):
         if len(s) != len(t):
             return False
         
+        ## Using single HashMap
         count = {}
 
         for c in s:
