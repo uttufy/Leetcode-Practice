@@ -6,8 +6,9 @@ class Solution(object):
         """
         # fibonacci sequence
 
-        if n < 3:
-            return n
+        # not neccessary
+        # if n < 3:
+        #     return n
 
         first = 1
         second = 1
