@@ -16,7 +16,7 @@ class MyQueue(object):
         """
         :rtype: int
         """
-        
+        # HACKY in STACK we cannot shift element using i+1 index
         remove = self.stack[0]
         for i in range(len(self.stack)):
             if i == len(self.stack) - 1:
