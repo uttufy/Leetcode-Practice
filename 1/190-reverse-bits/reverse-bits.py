@@ -7,7 +7,7 @@ class Solution:
         # Iterate over all 32 bits of the given number
         for i in range(32):
             # Left shift the reversed number by 1 and add the last bit of the given number to it
-            reversed_num = (reversed_num << 1) | (n & 1)
+            reversed_num = (reversed_num << 1) + (n & 1)
             # To add the last bit of the given number to the reversed number, perform an AND operation with the given number and 1
             n >>= 1
         
