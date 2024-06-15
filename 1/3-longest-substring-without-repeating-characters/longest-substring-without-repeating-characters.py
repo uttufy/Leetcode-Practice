@@ -1,6 +1,7 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
 
+        # Complexity O(N)
         if len(s)<2:
             return len(s)
 
@@ -10,8 +11,7 @@ class Solution:
         tail = 0 
         curr = ""
 
-        
-
+    
         while head<len(s):
             if s[head]!=s[tail] and s[head]!=s[head-1] and not s[head] in curr:
                 head+=1
