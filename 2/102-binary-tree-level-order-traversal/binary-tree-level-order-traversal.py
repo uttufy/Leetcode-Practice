@@ -17,10 +17,9 @@ class Solution:
             n = len(queue)
             for i in range(n):
                 node = queue.popleft()
-                level.append(node.val)
-                if node.left:
+                if node: 
+                    level.append(node.val)
                     queue.append(node.left)
-                if node.right:
                     queue.append(node.right)
 
             if level:
