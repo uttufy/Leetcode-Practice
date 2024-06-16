@@ -21,6 +21,10 @@ class Solution:
                     else:
                         res=-1*(abs(b)//abs(a))
 
+                        # in python
+                        # 6//4 = 1
+                        # -6//4 = -2
+                        # to avoid this truncation we need to check sign
             
                 st.append(res)
         
